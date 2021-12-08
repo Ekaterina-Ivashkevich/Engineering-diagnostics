@@ -1,0 +1,25 @@
+.main-navbar {
+    min-width: 250px;
+    width: 100%;
+    &__title {
+        text-align: center;
+        margin: 45px 5px 30px 5px;
+    }
+    &__list {
+        list-style: none;
+        padding-left: 0px;
+        text-align: center;
+    }
+    &__item {}
+    &__link {}
+}
+
+.main-search {
+    &__title {
+        text-align: center;
+        margin: 55px 5px 15px 5px;
+    }
+    &__form {
+        width: 100%;
+    }
+}

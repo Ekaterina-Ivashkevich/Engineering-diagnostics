@@ -1,0 +1,31 @@
+.main {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    &__title {
+        text-align: center;
+        margin: 35px 5px;
+        font-size: 35px;
+        font-family: $font-header;
+    }
+}
+
+.carousel {
+    min-height: 150px;
+    width: 100%;
+    background-image: url("../img/carousel2.jpg");
+}
+
+.main-news {
+    &__sub-title {
+        text-align: center;
+        margin: 30px;
+    }
+    &__article {}
+    &__article-title {
+        text-align: center;
+    }
+    &__img {
+        float: right;
+        max-width: 150px;
+    }
+}
