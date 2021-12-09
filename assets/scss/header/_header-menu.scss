@@ -1,0 +1,10 @@
+.header-menu {
+    background-color: mediumturquoise;
+    min-height: $gap*4;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    margin: 0 auto;
+}

@@ -3,17 +3,15 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 18px;
     font-family: $font-main;
     overflow-y: scroll;
 }
 
 body {
-    // background-color: #775f57ef;
-    background-color: seashell;
+    background-color: $color-light;
     margin: 0;
     padding: 0;
-    font-size: 1rem;
 }
 
 a {
@@ -22,14 +20,25 @@ a {
 }
 
 .wrapper {
-    max-width: 1280px;
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
-    box-shadow: rgb(39, 34, 25) 0px 0px 20px;
+    min-height: 100vh;
 }
 
 .container {
+    max-width: 1450px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+h1 {
+    font-family: $font-header;
+    font-size: 42px;
+    line-height: 51px;
+    letter-spacing: -0.5px;
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: $gap*1.7;
 }
