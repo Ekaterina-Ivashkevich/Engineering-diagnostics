@@ -51,7 +51,7 @@
         &__item {
             &::before {
                 content: "";
-                background: url(/assets/img/icon.png) no-repeat top left; //неправильный путь !!!!
+                background: url(../img/icon.png) no-repeat top left; //неправильный путь !!!!
                 height: 30px;
                 width: 30px;
                 position: absolute;
