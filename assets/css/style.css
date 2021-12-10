@@ -964,6 +964,7 @@ h1 {
 }
 @media (max-width: 767.8px) {
   h1 {
+    width: 100%;
     text-align: center;
     font-size: 42px;
   }
@@ -980,6 +981,7 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 0;
   }
   .header-content__main {
     width: 100%;
@@ -1015,6 +1017,10 @@ h1 {
   }
   .header-content__text {
     font-size: 20px;
+    text-align: center;
+  }
+  .header-content__offer-text {
+    text-align: center;
   }
   .header-content__offer-btn {
     min-width: 340px;
@@ -1038,10 +1044,17 @@ h1 {
         -ms-flex-align: start;
             align-items: flex-start;
     width: 100%;
+    gap: 20px;
   }
   .header-info__item {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
   }
   .header-info__text {
     font-size: 20px;

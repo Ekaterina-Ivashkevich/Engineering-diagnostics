@@ -29,6 +29,7 @@
                  flex-direction: column;
                  align-items: flex-start;
                  width: 100%;
+                 gap: $gap;
              }
              min-height: $gap*11.4;
              justify-content: space-between;
@@ -44,8 +45,11 @@
                  justify-content: flex-start;
              }
              @include md {
-                 width: 50%;
+                 width: 100%;
                  margin: 0 auto;
+                 text-align: center;
+                 flex-direction: column;
+                 gap: $gap/2;
              }
          }
          &__text {
