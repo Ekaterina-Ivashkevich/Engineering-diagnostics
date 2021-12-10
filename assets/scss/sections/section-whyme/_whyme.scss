@@ -1,0 +1,33 @@
+.whyme {
+    display: flex;
+    min-height: 446px;
+    position: relative;
+    img {
+        position: absolute;
+        width: 385px;
+        height: 385px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        margin-top: 54px;
+        overflow: auto;
+    }
+}
+
+.whyme-bg {
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    max-width: 1920px;
+    width: 100%;
+    min-height: 446px;
+    &__white {
+        width: 50%;
+    }
+    &__beg {
+        width: 50%;
+        background-color: $color-beg;
+    }
+}
