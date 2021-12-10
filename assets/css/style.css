@@ -931,7 +931,7 @@ h1 {
 }
 .whyme-list__item::before {
   content: "";
-  background: url(assets/img/icon.png) no-repeat top left;
+  background: url(/assets/img/icon.png) no-repeat top left;
   height: 30px;
   width: 30px;
   position: absolute;
