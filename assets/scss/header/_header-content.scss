@@ -21,6 +21,7 @@
         }
         &__text p {
             margin: 0;
+            letter-spacing: 0.1px;
         }
         &__offer-text {
             font-family: $font-main;
@@ -40,5 +41,18 @@
             margin-top: 10px;
             margin-bottom: $gap*1.7;
             border-radius: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__offer-btn p {
+            font-family: $font-header;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #000000;
+            padding-left: 12px;
+            font-weight: 900;
         }
     }

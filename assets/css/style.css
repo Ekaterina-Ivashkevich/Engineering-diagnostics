@@ -486,7 +486,6 @@ a {
 
 .wrapper {
   max-width: 1920px;
-  width: 100%;
   margin: 0 auto;
   min-height: 100vh;
 }
@@ -552,16 +551,148 @@ h1 {
 }
 
 .header-menu {
-  background-color: mediumturquoise;
+  width: 100%;
   min-height: 80px;
-  position: fixed;
+  max-width: 1420px;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1;
-  margin: 0 auto;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-menu__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-menu__mail p {
+  font-family: "Proxima Nova Lt", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: -0.3px;
+  opacity: 0.5;
+  padding: 0;
+  margin: 0;
+}
+.header-menu__mail-link {
+  color: inherit;
+}
+.header-menu__mail-link span {
+  padding-left: 6px;
+  font-family: "Proxima Nova Rg";
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: -0.3px;
+  color: #FEE040;
+}
+.header-menu__tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.header-menu__tel-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 6px;
+}
+.header-menu__tel-img p {
+  margin: 0;
+  padding: 0 1px 0 8px;
+  font-family: "Proxima Nova Lt", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: -0.3px;
+  opacity: 0.5;
+}
+.header-menu__tel-img img {
+  margin-bottom: 2px;
+}
+.header-menu__tel-nmb {
+  font-family: "Proxima Nova Rg";
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+.header-menu__tel-nmb P {
+  margin: 0;
 }
 
+.header-navbar__btn span {
+  display: block;
+  height: 2px;
+  width: 40px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  opacity: 1;
+}
+.header-navbar__btn span:hover {
+  background-color: #FEE040;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.header-navbar__btn-row:nth-child(1) {
+  margin-bottom: 9px;
+}
+
+.header-navbar__btn-row:nth-child(2) {
+  margin-bottom: 9px;
+  background-color: #FEE040;
+}
+
+/*.header-navbar__btn-row:nth-child(3) {
+    top: 18px;
+}
+
+.header-navbar__btn.active span:nth-child(1) {
+    top: 9px;
+    transform: rotate(135deg);
+}
+
+.header-navbar__btn.active span:nth-child(2) {
+    opacity: 0;
+    left: -30px;
+}
+
+.header-navbar__btn.active span:nth-child(3) {
+    top: 9px;
+    transform: rotate(-135deg);
+}*/
 .header-content {
   width: 100%;
   position: relative;
@@ -592,6 +723,7 @@ h1 {
 }
 .header-content__text p {
   margin: 0;
+  letter-spacing: 0.1px;
 }
 .header-content__offer-text {
   font-family: "Proxima Nova Lt", sans-serif;
@@ -611,6 +743,25 @@ h1 {
   margin-top: 10px;
   margin-bottom: 34px;
   border-radius: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-content__offer-btn p {
+  font-family: "Gilroy", serif;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-left: 12px;
+  font-weight: 900;
 }
 
 .header-info {

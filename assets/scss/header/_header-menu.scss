@@ -1,10 +1,75 @@
 .header-menu {
-    background-color: mediumturquoise;
+    width: 100%;
     min-height: $gap*4;
-    position: fixed;
+    max-width: 1420px;
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1;
-    margin: 0 auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+    &__logo {}
+    &__mail {
+        p {
+            font-family: $font-main;
+            font-size: 12px;
+            line-height: 12px;
+            letter-spacing: -0.3px;
+            opacity: 0.5;
+            padding: 0;
+            margin: 0;
+        }
+        &-link {
+            color: inherit;
+            span {
+                padding-left: 6px;
+                font-family: $font-pnregular;
+                font-size: 14px;
+                line-height: 12px;
+                letter-spacing: -0.3px;
+                color: $color-accent;
+            }
+        }
+    }
+    &__tel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        &-img {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-bottom: 6px;
+            p {
+                margin: 0;
+                padding: 0 1px 0 8px;
+                font-family: $font-main;
+                font-size: 12px;
+                line-height: 12px;
+                letter-spacing: -0.3px;
+                opacity: 0.5;
+            }
+            img {
+                margin-bottom: 2px;
+            }
+        }
+        &-nmb {
+            P {
+                margin: 0;
+            }
+            font-family: $font-pnregular;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.3px;
+        }
+    }
 }
