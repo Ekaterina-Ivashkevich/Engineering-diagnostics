@@ -2,6 +2,10 @@
     display: flex;
     min-height: 446px;
     position: relative;
+    @include md {
+        flex-direction: column;
+        flex-grow: 1;
+    }
     img {
         position: absolute;
         width: 385px;
@@ -13,6 +17,23 @@
         margin: auto;
         margin-top: 54px;
         overflow: auto;
+        @include xl-lg {
+            width: 300px;
+            height: 300px;
+            margin-top: 85px;
+        }
+        @include lg {
+            display: none;
+        }
+        @include md {
+            margin-top: 30px;
+            display: block;
+            position: relative;
+            max-width: 300px;
+            width: 100%;
+            max-height: 300px;
+            height: 100%;
+        }
     }
 }
 
@@ -29,5 +50,8 @@
     &__beg {
         width: 50%;
         background-color: $color-beg;
+    }
+    @include ul {
+        display: none;
     }
 }

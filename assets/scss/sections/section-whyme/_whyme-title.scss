@@ -4,6 +4,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        @include md {
+            width: 100%;
+        }
         &__container {
             max-width: 65%;
             h2 {
@@ -24,6 +27,19 @@
                     font-size: 26px;
                     margin-bottom: 30px;
                 }
+                @include lg-md {
+                    text-align: center;
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                }
+                @include md {
+                    text-align: center;
+                    font-size: 35px;
+                    margin-top: 80px;
+                    margin-bottom: 30px;
+                    padding-right: $gap;
+                    padding-left: $gap;
+                }
             }
             p {
                 font-family: $font-pnregular;
@@ -38,12 +54,28 @@
                 @include xl-lg {
                     text-align: center;
                 }
+                @include lg-md {
+                    text-align: center;
+                }
+                @include md {
+                    text-align: center;
+                    margin-bottom: 45px;
+                    padding-right: $gap;
+                    padding-left: $gap;
+                }
             }
-        }
-    }
-    
-    .whyme-title__container {
-        @include ul-xl {
-            max-width: 70%;
+            @include ul-xl {
+                max-width: 70%;
+            }
+            @include xl-lg {
+                max-width: 75%;
+            }
+            @include lg-md {
+                margin: 0 auto;
+                max-width: 85%;
+            }
+            @include md {
+                max-width: 100%;
+            }
         }
     }
