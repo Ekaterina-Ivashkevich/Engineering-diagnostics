@@ -104,6 +104,9 @@
         @include md {
             min-width: $gap*17;
         }
+        @include sm {
+            min-width: $gap * 13;
+        }
         min-height: $gap * 3.5;
         background-color: $color-accent;
         border: none;
