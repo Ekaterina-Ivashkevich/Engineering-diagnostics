@@ -1,41 +1,77 @@
-.header-info {
-    width: 100%;
-    min-height: $gap*11.4;
-    position: relative;
-    z-index: 1;
-    margin-bottom: $gap*3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    &__list {
-        display: flex;
-        width: 69%;
-        min-height: $gap*11.4;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-    &__item {
-        display: flex;
-        justify-content: flex-start;
-        gap: $gap*1.45;
-        align-items: center;
-        width: $gap*13.007;
-    }
-    &__text {
-        font-family: $font-pnregular;
-        font-size: 20px;
-        line-height: 28px;
-        letter-spacing: -0.5px;
-    }
-    &__text p {
-        margin: 0;
-    }
-    &__img {
-        width: $gap*2.6325;
-        height: $gap*2.348;
-    }
-    &__video {
-        max-width: $gap*11;
-        max-height: $gap*11;
-    }
-}
+     .header-info {
+         width: 100%;
+         min-height: $gap*11.4;
+         position: relative;
+         z-index: 1;
+         margin-bottom: $gap*3;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         @include md {
+             flex-direction: column;
+             gap: $gap*3;
+             justify-content: center;
+         }
+         &__list {
+             display: flex;
+             width: 69%;
+             @include xl-lg {
+                 width: 76%;
+                 gap: 5px;
+             }
+             @include lg-md {
+                 flex-direction: column;
+                 align-items: flex-start;
+                 width: 75%;
+                 margin-left: $gap*2;
+             }
+             @include md {
+                 flex-direction: column;
+                 align-items: flex-start;
+                 width: 100%;
+             }
+             min-height: $gap*11.4;
+             justify-content: space-between;
+             align-items: flex-end;
+         }
+         &__item {
+             display: flex;
+             justify-content: flex-start;
+             gap: $gap*1.45;
+             align-items: center;
+             width: $gap*13.007;
+             @include lg-md {
+                 justify-content: flex-start;
+             }
+             @include md {
+                 width: 50%;
+                 margin: 0 auto;
+             }
+         }
+         &__text {
+             font-family: $font-pnregular;
+             font-size: 20px;
+             line-height: 28px;
+             letter-spacing: -0.5px;
+             @include xl-lg {
+                 font-size: 18px;
+             }
+             @include md {
+                 font-size: 20px;
+             }
+         }
+         &__text p {
+             margin: 0 0 0 0;
+         }
+         &__img {
+             width: $gap*2.6325;
+             height: $gap*2.348;
+         }
+         &__video {
+             max-width: $gap*11;
+             max-height: $gap*11;
+             @include lg-md {
+                 margin-right: $gap*2;
+             }
+         }
+     }

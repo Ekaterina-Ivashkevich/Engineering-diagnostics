@@ -1,58 +1,137 @@
-    .header-content {
-        width: 100%;
-        position: relative;
-        z-index: 1;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: $gap*6;
-        padding-right: $gap*6;
-        margin-bottom: $gap*3.2;
-        margin-top: $gap*10;
-        &__main {
-            width: 50%;
+.header-content {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: $gap * 6;
+    padding-right: $gap * 6;
+    margin-bottom: $gap * 3.2;
+    margin-top: $gap * 10;
+    @include xl-lg {
+        padding-left: $gap * 4;
+        padding-right: $gap * 4;
+    }
+    @include lg-md {
+        padding-left: $gap * 2;
+        padding-right: $gap * 2;
+    }
+    @include md {
+        flex-wrap: wrap;
+        gap: $gap*2;
+        justify-content: center;
+    }
+    &__main {
+        width: 50%;
+        @include xl-lg {
+            width: 48%;
+            h1 {
+                font-size: 33px;
+            }
         }
-        &__text {
-            font-family: $font-pnregular;
-            font-size: 20px;
-            line-height: 34px;
-            opacity: 0.7;
-            max-width: $gap*18.15;
+        @include lg-md {
+            width: 54%;
+            h1 {
+                font-size: 30px;
+            }
         }
-        &__text p {
-            margin: 0;
-            letter-spacing: 0.1px;
-        }
-        &__offer-text {
-            font-family: $font-main;
-            font-size: 15px;
-            line-height: 28px;
-            max-width: $gap*17;
-        }
-        &__offer-text p {
-            margin: 0;
-        }
-        &__offer-btn {
-            min-width: $gap*17;
-            min-height: $gap*3.5;
-            background-color: $color-accent;
-            border: none;
-            padding: 0;
-            margin-top: 10px;
-            margin-bottom: $gap*1.7;
-            border-radius: 2px;
+        @include md {
+            width: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-        &__offer-btn p {
-            font-family: $font-header;
-            font-size: 12px;
-            line-height: 15px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: #000000;
-            padding-left: 12px;
-            font-weight: 900;
+    }
+    &__offer {
+        @include xl-lg {
+            width: 35%;
+        }
+        @include lg-md {
+            width: 40%;
+        }
+        @include md {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     }
+    &__text {
+        font-family: $font-pnregular;
+        font-size: 20px;
+        line-height: 34px;
+        opacity: 0.7;
+        max-width: $gap * 18.15;
+        @include lg-md {
+            font-size: 18px;
+        }
+        @include md {
+            font-size: 20px;
+        }
+    }
+    &__text p {
+        margin: 0;
+        letter-spacing: 0.1px;
+    }
+    &__offer-text {
+        font-family: $font-main;
+        font-size: 15px;
+        line-height: 28px;
+        max-width: $gap * 17;
+        @include lg-md {
+            font-size: 14px;
+        }
+    }
+    &__offer-text p {
+        margin: 0;
+    }
+    &__offer-btn {
+        min-width: $gap * 17;
+        @include xl-lg {
+            min-width: $gap * 14;
+        }
+        @include lg-md {
+            min-width: $gap * 13;
+        }
+        @include md {
+            min-width: $gap*17;
+        }
+        min-height: $gap * 3.5;
+        background-color: $color-accent;
+        border: none;
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: $gap * 1.7;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s linear;
+        &:hover {
+            background-color: $color-light;
+            transform: scale(1.1);
+            p {
+                color: rgba(14, 56, 192, 0.979);
+                transform: scale(1.05);
+                margin-left: 8px;
+            }
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+    &__offer-btn p {
+        font-family: $font-header;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #000000;
+        padding-left: 12px;
+        font-weight: 900;
+        transition: 0.3s;
+    }
+}

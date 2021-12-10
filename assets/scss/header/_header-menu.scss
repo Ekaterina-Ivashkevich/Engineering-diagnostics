@@ -9,15 +9,51 @@
     z-index: 1;
     margin: auto;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    &__left {
+        width: 22.3%;
+        display: flex;
+        justify-content: space-between;
+        @include ul-xl {
+            width: 26%;
+        }
+        @include xl-lg {
+            width: 35%;
+        }
+        @include lg-md {
+            width: 40%;
+        }
+        @include md {
+            width: 100%;
+        }
+    }
+    &__right {
+        width: 32.4%;
+        display: flex;
+        justify-content: space-between;
+        @include ul-xl {
+            width: 36%;
+        }
+        @include xl-lg {
+            width: 40%;
+        }
+        @include lg-md {
+            width: 45%;
+        }
+        @include md {
+            display: none;
+        }
+    }
     &__nav {
         display: flex;
         align-items: center;
     }
     &__logo {}
     &__mail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         p {
             font-family: $font-main;
             font-size: 12px;
