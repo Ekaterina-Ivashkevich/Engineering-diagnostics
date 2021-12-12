@@ -1028,7 +1028,6 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  z-index: -2;
 }
 .services__overlay {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 78, 134, 0.9)), to(rgba(10, 65, 104, 0.9)));
@@ -1040,9 +1039,10 @@ h1 {
   right: 0;
   bottom: 0;
   overflow: hidden;
-  z-index: -1;
 }
 .services__body {
+  position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1054,6 +1054,8 @@ h1 {
   margin-bottom: 60px;
 }
 .services__progressbar {
+  position: relative;
+  z-index: 1;
   height: 4px;
   width: 100%;
   background: -webkit-gradient(linear, right top, left top, from(#FEE040), to(rgba(254, 224, 64, 0)));
