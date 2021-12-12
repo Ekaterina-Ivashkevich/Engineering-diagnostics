@@ -466,16 +466,16 @@ template {
 }
 
 html {
+  height: 100%;
   font-size: 18px;
   font-family: "Proxima Nova Lt", sans-serif;
   overflow-y: scroll;
 }
 
 body {
-  background-color: #FFFFFF;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  background-color: #FFFFFF;
 }
 
 a {
@@ -484,12 +484,12 @@ a {
   max-width: max-content;
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 .wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .container {
@@ -969,7 +969,6 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1920px;
   width: 100%;
   min-height: 446px;
 }
@@ -1016,6 +1015,140 @@ h1 {
   letter-spacing: -0.3px;
   color: #707070;
   opacity: 0.7;
+}
+
+/*.section-services {
+    position: relative;
+}*/
+.services {
+  position: relative;
+  min-height: 753px;
+  background-image: url(../img/bgservises.png);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  z-index: -2;
+}
+.services__overlay {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 78, 134, 0.9)), to(rgba(10, 65, 104, 0.9)));
+  background: -o-linear-gradient(top, rgba(0, 78, 134, 0.9) 0%, rgba(10, 65, 104, 0.9) 100%);
+  background: linear-gradient(180deg, rgba(0, 78, 134, 0.9) 0%, rgba(10, 65, 104, 0.9) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+.services__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 100px;
+  margin-bottom: 60px;
+}
+.services__progressbar {
+  height: 4px;
+  width: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(#FEE040), to(rgba(254, 224, 64, 0)));
+  background: -o-linear-gradient(right, #FEE040 0%, rgba(254, 224, 64, 0) 100%);
+  background: linear-gradient(270deg, #FEE040 0%, rgba(254, 224, 64, 0) 100%);
+  margin-bottom: 100px;
+}
+
+.services__title {
+  text-align: center;
+}
+.services__title h3 {
+  margin-top: 0;
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  line-height: 16px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  color: #FEE040;
+  margin-bottom: 0;
+  padding-left: 17px;
+}
+.services__title p {
+  font-family: "Gilroy", serif;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -0.4px;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-top: 17px;
+  margin-bottom: 50px;
+}
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.services__item {
+  max-width: 400px;
+  width: 100%;
+  min-height: 381px;
+  margin-right: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.service-card__img {
+  max-width: 400px;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 3px;
+}
+.service-card h4 {
+  font-family: "Proxima Nova Rg";
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.3px;
+  color: #FFFFFF;
+  margin-bottom: 19px;
+}
+.service-card p {
+  font-family: "Proxima Nova Rg";
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.service-card__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.service-card__link-more {
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  line-height: 16px;
+  letter-spacing: 7px;
+  color: #FEE040;
+  margin-bottom: 0;
+}
+.service-card__link-more a {
+  display: block;
 }
 @media (max-width: 1339.8px) and (min-width: 1200px) {
   .header-menu__left {

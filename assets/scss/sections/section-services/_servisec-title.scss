@@ -1,0 +1,26 @@
+.services {
+    &__title {
+        text-align: center;
+        h3 {
+            margin-top: 0;
+            font-family: $font-bebas;
+            font-size: 20px;
+            line-height: 16px;
+            letter-spacing: 20px;
+            text-transform: uppercase;
+            color: $color-accent;
+            margin-bottom: 0;
+            padding-left: 17px;
+        }
+        p {
+            font-family: $font-header;
+            font-size: 32px;
+            line-height: 42px;
+            letter-spacing: -0.4px;
+            color: $color-light;
+            font-weight: bold;
+            margin-top: 17px;
+            margin-bottom: 50px;
+        }
+    }
+}

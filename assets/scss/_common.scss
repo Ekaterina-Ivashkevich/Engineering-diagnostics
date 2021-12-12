@@ -3,28 +3,28 @@
 }
 
 html {
+    height: 100%;
     font-size: 18px;
     font-family: $font-main;
     overflow-y: scroll;
 }
 
 body {
-    background-color: $color-light;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    background-color: $color-light;
 }
 
 a {
     max-width: max-content;
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 .wrapper {
-    max-width: 1920px;
-    margin: 0 auto;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .container {
