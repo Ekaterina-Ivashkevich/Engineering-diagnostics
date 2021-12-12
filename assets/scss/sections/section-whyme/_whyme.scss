@@ -51,7 +51,7 @@
         width: 50%;
         background-color: $color-beg;
     }
-    @include ul {
+    @include md {
         display: none;
     }
 }

@@ -45,6 +45,8 @@ h1 {
     @include md {
         width: 100%;
         text-align: center;
-        font-size: 42px
+        font-size: 42px;
+        padding-right: $gap;
+        padding-left: $gap;
     }
 }

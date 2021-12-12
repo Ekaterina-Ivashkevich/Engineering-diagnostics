@@ -28,13 +28,13 @@
         @include xl-lg {
             width: 48%;
             h1 {
-                font-size: 33px;
+                font-size: 38px;
             }
         }
         @include lg-md {
             width: 54%;
             h1 {
-                font-size: 30px;
+                font-size: 35px;
             }
         }
         @include md {
@@ -119,6 +119,7 @@
         align-items: center;
         transition: 0.3s linear;
         &:hover {
+            cursor: pointer;
             background-color: $color-light;
             transform: scale(1.1);
             p {
