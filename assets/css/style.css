@@ -515,7 +515,7 @@ h1 {
   min-height: 768px;
   color: #FFFFFF;
   background-color: transparent;
-  background-image: url(../img/sean-pollock-203658-unsplash.jpg);
+  background-image: url(../img/bg_header.jpg);
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1023,7 +1023,7 @@ h1 {
 .services {
   position: relative;
   min-height: 753px;
-  background-image: url(../img/bgservises.png);
+  background-image: url(../img/bgservises.jpg);
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1119,6 +1119,8 @@ h1 {
   height: 180px;
   overflow: hidden;
   border-radius: 3px;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.534);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.534);
 }
 .service-card h4 {
   font-family: "Proxima Nova Rg";
@@ -1150,7 +1152,14 @@ h1 {
   margin-bottom: 0;
 }
 .service-card__link-more a {
-  display: block;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.service-card__link-more a:hover {
+  color: #FFFFFF;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px black;
 }
 @media (max-width: 1339.8px) and (min-width: 1200px) {
   .header-menu__left {
