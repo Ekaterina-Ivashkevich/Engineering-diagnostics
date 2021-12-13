@@ -2,9 +2,11 @@
     max-width: 400px;
     width: 100%;
     min-height: 381px;
-    margin-right: 80px;
     display: flex;
     flex-direction: column;
+    &:not(:last-child) {
+        margin-right: 80px;
+    }
 }
 
 .service-card {

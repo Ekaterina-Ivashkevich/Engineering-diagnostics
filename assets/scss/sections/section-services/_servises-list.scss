@@ -1,4 +1,25 @@
-.services__list {
-    display: flex;
-    flex-direction: row;
+.services {
+    &__scrollbar {
+        height: 381px;
+        width: 1420px;
+        position: relative;
+        overflow: hidden;
+    }
+    &__scroll-none {
+        position: absolute;
+        overflow-x: scroll;
+        width: 1420px;
+        overflow-y: hidden;
+        top: 0;
+        left: 0;
+    }
+    &__scroll-none::-webkit-scrollbar {
+        display: none;
+    }
+    &__list {
+        display: flex;
+        flex-grow: 0;
+        height: 381px;
+        width: 2400px;
+    }
 }
