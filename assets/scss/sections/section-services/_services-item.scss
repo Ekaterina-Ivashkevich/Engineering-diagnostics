@@ -1,15 +1,16 @@
 .services__item {
-    max-width: 400px;
-    width: 100%;
-    min-height: 381px;
+    width: 400px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     &:not(:last-child) {
-        margin-right: 80px;
+        margin-bottom: 80px;
     }
 }
 
 .service-card {
+    transform: rotate(90deg);
+    transform-origin: 200px 200px;
     &__img {
         max-width: 400px;
         width: 100%;
@@ -30,12 +31,13 @@
         font-family: $font-pnregular;
         font-size: 16px;
         line-height: 162%;
-        letter-spacing: -0.5px;
+        letter-spacing: -0.3px;
         color: $color-light;
         opacity: 0.7;
     }
     &__text {
         flex: 1 1 auto;
+        width: 100%;
     }
     &__link-more {
         a {
@@ -51,6 +53,6 @@
         line-height: 16px;
         letter-spacing: 7px;
         color: $color-accent;
-        margin-bottom: 0;
+        margin-bottom: 18px;
     }
 }

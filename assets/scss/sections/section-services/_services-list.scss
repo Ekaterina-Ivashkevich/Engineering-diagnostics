@@ -1,0 +1,24 @@
+.services {
+    &__scrollbar {
+        height: 400px;
+        width: 1420px;
+        position: relative;
+    }
+    &__notscrollbar {
+        height: 400px;
+        width: 1420px;
+        overflow: hidden;
+    }
+    &__notscrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    &__list {
+        width: 420px;
+        height: 1420px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-right: 20px;
+        transform: rotate(-90deg);
+        transform-origin: 200px 200px;
+    }
+}

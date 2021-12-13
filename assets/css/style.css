@@ -1048,7 +1048,7 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 100px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .services__progressbar {
   position: relative;
@@ -1086,37 +1086,35 @@ h1 {
 }
 
 .services__scrollbar {
-  height: 381px;
+  height: 400px;
   width: 1420px;
   position: relative;
+}
+.services__notscrollbar {
+  height: 400px;
+  width: 1420px;
   overflow: hidden;
 }
-.services__scroll-none {
-  position: absolute;
-  overflow-x: scroll;
-  width: 1420px;
-  overflow-y: hidden;
-  top: 0;
-  left: 0;
-}
-.services__scroll-none::-webkit-scrollbar {
+.services__notscrollbar::-webkit-scrollbar {
   display: none;
 }
 .services__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  height: 381px;
-  width: 2400px;
+  width: 420px;
+  height: 1420px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 20px;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: 200px 200px;
+      -ms-transform-origin: 200px 200px;
+          transform-origin: 200px 200px;
 }
 
 .services__item {
-  max-width: 400px;
-  width: 100%;
-  min-height: 381px;
+  width: 400px;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1126,9 +1124,17 @@ h1 {
           flex-direction: column;
 }
 .services__item:not(:last-child) {
-  margin-right: 80px;
+  margin-bottom: 80px;
 }
 
+.service-card {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: 200px 200px;
+      -ms-transform-origin: 200px 200px;
+          transform-origin: 200px 200px;
+}
 .service-card__img {
   max-width: 400px;
   width: 100%;
@@ -1150,7 +1156,7 @@ h1 {
   font-family: "Proxima Nova Rg";
   font-size: 16px;
   line-height: 162%;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.3px;
   color: #FFFFFF;
   opacity: 0.7;
 }
@@ -1158,6 +1164,7 @@ h1 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  width: 100%;
 }
 .service-card__link-more {
   font-family: "Bebas Neue";
@@ -1165,7 +1172,7 @@ h1 {
   line-height: 16px;
   letter-spacing: 7px;
   color: #FEE040;
-  margin-bottom: 0;
+  margin-bottom: 18px;
 }
 .service-card__link-more a {
   -webkit-transition: all 0.3s linear;
