@@ -1,0 +1,32 @@
+.steps {
+    &__header {
+        text-align: center;
+        min-height: 360px;
+    }
+    &__container {
+        padding-top: 109px;
+        padding-bottom: 80px;
+        p {
+            font-family: $font-header;
+            font-size: 20px;
+            line-height: 140%;
+            font-weight: bold;
+            color: $colot-text;
+            margin-top: 28px;
+            margin-left: 450px;
+            margin-right: 450px;
+        }
+    }
+    &__gradient {
+        background: linear-gradient(180deg, rgba(96, 182, 255, 1) 0%, rgba(0, 78, 134, 0.8) 100%);
+        h2 {
+            font-family: $font-bebas;
+            font-size: 80px;
+            line-height: 64px;
+            letter-spacing: 5px;
+            background: white;
+            mix-blend-mode: screen;
+            margin: 0;
+        }
+    }
+}

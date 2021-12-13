@@ -49,7 +49,7 @@
                  margin: 0 auto;
                  text-align: center;
                  flex-direction: column;
-                 gap: $gap/2;
+                 gap: calc($gap/2);
              }
          }
          &__text {
