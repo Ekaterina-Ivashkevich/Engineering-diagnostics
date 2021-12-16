@@ -1194,14 +1194,13 @@ h1 {
   padding-bottom: 80px;
 }
 .steps__container p {
+  max-width: 503px;
   font-family: "Gilroy", serif;
   font-size: 20px;
   line-height: 140%;
   font-weight: bold;
   color: #505050;
-  margin-top: 28px;
-  margin-left: 450px;
-  margin-right: 450px;
+  margin: 28px auto 0 auto;
 }
 .steps__gradient {
   background: -webkit-gradient(linear, left top, left bottom, from(#60b6ff), to(rgba(0, 78, 134, 0.8)));
@@ -1220,12 +1219,119 @@ h1 {
 
 .step-one {
   min-height: 441px;
-  background-color: maroon;
 }
 .step-one__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.step-one__slider {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.step-one__main {
+  background-color: #F5F5F5;
+  min-height: 441px;
+  width: 50%;
+  background-color: #F5F5F5;
+  padding-top: 78px;
+  padding-bottom: 80px;
+  padding-left: 70px;
+}
+
+.main-one {
+  max-width: 503px;
+}
+.main-one__content {
+  max-width: 460px;
+  margin-bottom: 32px;
+}
+.main-one__review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.main-one__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-one__title span {
+  font-family: "Proxima Nova Th";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 144%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #151515;
+  background-color: #FEE040;
+  padding: 2px 8px;
+  margin-right: 19px;
+}
+.main-one__title h4 {
+  font-family: "Proxima Nova Th";
+  font-size: 24px;
+  line-height: 142%;
+  letter-spacing: -0.6px;
+  font-weight: bold;
+  color: #151515;
+  margin: 0;
+}
+.main-one__text {
+  font-family: "Proxima Nova Lt", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 144%;
+  letter-spacing: -0.5px;
+  color: #333333;
+  opacity: 0.7;
+}
+.main-one__avatar {
+  position: absolute;
+  top: -22px;
+  left: -41px;
+}
+.main-one__review-text {
+  margin-left: 100px;
+}
+.main-one__review-text_quote {
+  font-family: "Proxima Nova Lt", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.4px;
+  color: #505050;
+  opacity: 0.7;
+  font-style: italic;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.main-one__review-text_name {
+  font-family: "Proxima Nova Th";
+  font-size: 16px;
+  line-height: 162%;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  color: #151515;
+  opacity: 0.7;
+  margin: 0;
+}
+.main-one__review-text_name span {
+  text-transform: uppercase;
 }
 @media (max-width: 1339.8px) and (min-width: 1200px) {
   .header-menu__left {
@@ -1244,6 +1350,33 @@ h1 {
   }
   .whyme-title__container {
     max-width: 70%;
+  }
+}
+@media (max-width: 1199.8px) {
+  .step-one__container {
+    max-width: 1200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .step-one__slider {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 40px;
+    margin-top: -20px;
+  }
+  .step-one__main {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 70px;
+  }
+  .main-one {
+    margin: 0 auto;
   }
 }
 @media (max-width: 1199.8px) and (min-width: 992px) {
@@ -1544,5 +1677,32 @@ h1 {
   }
   .whyme-title__container h2 {
     padding: 0;
+  }
+  .services__body {
+    padding-top: 70px;
+  }
+  .services__title p {
+    font-size: 30px;
+    margin-top: 25px;
+  }
+  .steps__container {
+    padding-top: 65px;
+    padding-bottom: 70px;
+  }
+  .steps__gradient h2 {
+    font-size: 70px;
+  }
+  .main-one__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 349.8px) {
+  .steps__gradient h2 {
+    font-size: 55px;
   }
 }

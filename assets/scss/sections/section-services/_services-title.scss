@@ -21,6 +21,10 @@
             font-weight: bold;
             margin-top: 17px;
             margin-bottom: 50px;
+            @include sm {
+                font-size: 30px;
+                margin-top: 25px;
+            }
         }
     }
 }

@@ -23,6 +23,9 @@
         flex-direction: column;
         padding-top: $gap*5;
         margin-bottom: $gap*2;
+        @include sm {
+            padding-top: $gap*3.5;
+        }
     }
     &__progressbar {
         position: relative;

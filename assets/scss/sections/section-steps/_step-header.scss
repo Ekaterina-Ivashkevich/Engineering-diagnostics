@@ -6,15 +6,18 @@
     &__container {
         padding-top: 109px;
         padding-bottom: 80px;
+        @include sm {
+            padding-top: 65px;
+            padding-bottom: 70px;
+        }
         p {
+            max-width: 503px;
             font-family: $font-header;
             font-size: 20px;
             line-height: 140%;
             font-weight: bold;
             color: $colot-text;
-            margin-top: 28px;
-            margin-left: 450px;
-            margin-right: 450px;
+            margin: 28px auto 0 auto;
         }
     }
     &__gradient {
@@ -27,6 +30,12 @@
             background: white;
             mix-blend-mode: screen;
             margin: 0;
+            @include sm {
+                font-size: 70px;
+            }
+            @include xs {
+                font-size: 55px;
+            }
         }
     }
 }
