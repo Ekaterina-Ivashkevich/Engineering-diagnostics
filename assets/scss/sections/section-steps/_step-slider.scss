@@ -1,0 +1,86 @@
+/* Слайдер */
+
+.slider {
+    position: relative;
+}
+
+.slick-slider {}
+
+
+/* Слайдер запущен */
+
+.slick-slider.slick-initialized {}
+
+
+/* Слайдер с точками */
+
+.slick-slider.slick-dotted {}
+
+
+/* Ограничивающая оболочка */
+
+.slick-list {
+    overflow: hidden;
+}
+
+
+/* Лента слайдов */
+
+.slick-track {
+    display: flex;
+}
+
+
+/* Слайд */
+
+.slick-slide {}
+
+
+/* Слайд активный (показывается) */
+
+.slick-slide.slick-active {}
+
+
+/* Слайд основной */
+
+.slick-slide.slick-current {}
+
+
+/* Слайд по центру */
+
+.slick-slide.slick-center {}
+
+
+/* Клонированный слайд */
+
+.slick-slide.slick-cloned {}
+
+
+/* Точки (булиты) */
+
+.slick-dots {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    top: 86%;
+    left: calc(50% - 120px);
+    li {
+        button {
+            font-size: 0;
+            background-color: $color-light;
+            width: 35px;
+            height: 4px;
+            margin-right: 5px;
+            border: 0;
+            border-radius: 2px;
+        }
+        list-style: none;
+    }
+}
+
+.slick-active {
+    button {
+        background-color: $color-accent !important;
+    }
+}

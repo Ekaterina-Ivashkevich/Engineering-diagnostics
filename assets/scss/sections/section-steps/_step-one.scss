@@ -11,23 +11,46 @@
     }
     &__slider {
         width: 50%;
+        min-width: 0;
+        min-height: 441px;
         display: flex;
         justify-content: flex-end;
+        align-items: flex-end;
+        img {
+            max-width: 960px;
+            width: 100%;
+            height: 441px;
+            @include lg {
+                max-height: 441px;
+                height: 100%;
+            }
+        }
+        @include lg-md {
+            margin-top: -60px;
+        }
+        @include md-sm {
+            margin-top: -120px;
+        }
+        @include sm {
+            margin-top: -220px;
+        }
         @include xl {
             width: 100%;
             justify-content: center;
             margin-bottom: 40px;
             margin-top: -20px;
+            max-width: 960px;
         }
     }
     &__main {
         background-color: $color-beg;
-        min-height: 441px;
+        min-height: 442px;
         width: 50%;
         background-color: $color-beg;
         padding-top: 78px;
         padding-bottom: 80px;
         padding-left: 70px;
+        margin-bottom: 3px;
         @include xl {
             width: 100%;
             justify-content: center;
