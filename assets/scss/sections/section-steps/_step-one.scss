@@ -4,6 +4,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
         @include xl {
             max-width: 1200px;
             flex-direction: column;
@@ -11,6 +12,7 @@
     }
     &__slider {
         width: 50%;
+        max-width: 960px;
         min-width: 0;
         min-height: 441px;
         display: flex;
@@ -29,7 +31,7 @@
             margin-top: -60px;
         }
         @include md-sm {
-            margin-top: -120px;
+            margin-top: -135px;
         }
         @include sm {
             margin-top: -220px;
@@ -46,13 +48,15 @@
         background-color: $color-beg;
         min-height: 442px;
         width: 50%;
-        background-color: $color-beg;
+        max-width: 960px;
+        background-color: $color-beglight;
         padding-top: 78px;
         padding-bottom: 80px;
         padding-left: 70px;
         margin-bottom: 3px;
         @include xl {
             width: 100%;
+            max-width: 1200px;
             justify-content: center;
             padding-right: 70px;
         }
@@ -61,6 +65,17 @@
 
 .main-one {
     max-width: 503px;
+    &__bg {
+        min-height: 441px;
+        width: 100%;
+        background-color: $color-beglight;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        @include xl {
+            display: none;
+        }
+    }
     @include xl {
         margin: 0 auto;
     }

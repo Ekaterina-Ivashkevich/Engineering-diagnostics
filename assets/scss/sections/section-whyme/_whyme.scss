@@ -48,7 +48,7 @@
     }
     &__beg {
         width: 50%;
-        background-color: $color-beg;
+        background-color: $color-beglight;
     }
     @include md {
         display: none;

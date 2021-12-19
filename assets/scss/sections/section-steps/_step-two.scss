@@ -1,0 +1,40 @@
+.step-two {
+    &__header {
+        min-height: 323px;
+        text-align: center;
+        max-width: 840px;
+        padding-top: 78px;
+        margin: 0 auto;
+    }
+    &__title {
+        span {
+            font-family: $font-pnextrabold;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 144%;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: $color-gray-dark;
+            background-color: $color-accent;
+            padding: 3px 6px;
+        }
+        h4 {
+            font-family: $font-pnextrabold;
+            font-size: 24px;
+            line-height: 142%;
+            letter-spacing: -0.6px;
+            color: $color-gray-dark;
+            margin-top: $gap;
+            margin-bottom: 25px;
+        }
+    }
+    &__text {
+        font-family: $font-main;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 156%;
+        letter-spacing: -0.5px;
+        color: $color-gray;
+        opacity: 0.7;
+    }
+}
