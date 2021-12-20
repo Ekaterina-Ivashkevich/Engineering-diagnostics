@@ -12,14 +12,15 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('.step-two__slider').slick({
-        arrows: false,
-        dots: true,
+        arrows: true,
+        dots: false,
         autoplay: true,
         infinite: true,
         easing: 'easy',
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplaySpeed: 3000,
+        variableWidth: true,
 
     });
 });

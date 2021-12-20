@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
    ========================================================================== */
@@ -1440,12 +1441,7 @@ h1 {
 
 .step-two__slider {
   min-height: 417px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  position: relative;
 }
 .step-two__slider-bg {
   background-color: #FFFFFF;
@@ -1485,11 +1481,42 @@ h1 {
   color: #151515;
   opacity: 0.7;
   font-weight: bold;
-  margin-top: 100%;
+  margin-top: 340px;
   margin-left: auto;
   margin-right: auto;
   max-width: 260px;
 }
+
+/* Стрелка */
+.slick-arrow {
+  position: absolute;
+  font-size: 0;
+  top: 50%;
+  z-index: 10;
+  width: 30px;
+  height: 60px;
+}
+
+.slick-prev {
+  left: 5px;
+  background-color: transparent;
+  background-image: url(../img/arrow-prev.png);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0px;
+}
+
+.slick-next {
+  right: 5px;
+  background-color: transparent;
+  background-image: url(../img/arrow-next.png);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0px;
+}
+
 @media (max-width: 1339.8px) and (min-width: 1200px) {
   .header-menu__left {
     width: 26%;
@@ -1509,6 +1536,7 @@ h1 {
     max-width: 70%;
   }
 }
+
 @media (max-width: 1199.8px) {
   .step-one__container {
     max-width: 1200px;
@@ -1541,6 +1569,7 @@ h1 {
     margin: 0 auto;
   }
 }
+
 @media (max-width: 1199.8px) and (min-width: 992px) {
   .header-menu__left {
     width: 35%;
@@ -1588,6 +1617,7 @@ h1 {
     max-width: 75%;
   }
 }
+
 @media (max-width: 991.8px) {
   .whyme-list__container h3 {
     text-align: center;
@@ -1600,6 +1630,7 @@ h1 {
     height: 100%;
   }
 }
+
 @media (max-width: 991.8px) and (min-width: 768px) {
   .header-menu__left {
     width: 40%;
@@ -1677,6 +1708,7 @@ h1 {
     margin-top: -60px;
   }
 }
+
 @media (max-width: 767.8px) {
   h1 {
     width: 100%;
@@ -1839,12 +1871,18 @@ h1 {
   .whyme-title__container {
     max-width: 100%;
   }
+  .slick-arrow {
+    width: 20px;
+    height: 40px;
+  }
 }
+
 @media (max-width: 767.8px) and (min-width: 576px) {
   .step-one__slider {
     margin-top: -135px;
   }
 }
+
 @media (max-width: 575.8px) {
   .header-content__offer-btn {
     min-width: 260px;
@@ -1878,6 +1916,7 @@ h1 {
     gap: 20px;
   }
 }
+
 @media (max-width: 349.8px) {
   .steps__gradient h2 {
     font-size: 55px;
