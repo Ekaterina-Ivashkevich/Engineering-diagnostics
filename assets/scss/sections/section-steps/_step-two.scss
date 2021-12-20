@@ -5,6 +5,9 @@
         max-width: 840px;
         padding-top: 78px;
         margin: 0 auto;
+        @include sm {
+            margin-bottom: 40px;
+        }
     }
     &__title {
         span {

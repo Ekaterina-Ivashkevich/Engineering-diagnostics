@@ -1541,17 +1541,17 @@ h1 {
   .step-one__container {
     max-width: 1200px;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .step-one__slider {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 40px;
-    margin-top: -20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     max-width: 960px;
   }
   .step-one__main {
@@ -1705,7 +1705,7 @@ h1 {
     max-width: 85%;
   }
   .step-one__slider {
-    margin-top: -60px;
+    margin-top: 20px;
   }
 }
 
@@ -1879,7 +1879,7 @@ h1 {
 
 @media (max-width: 767.8px) and (min-width: 576px) {
   .step-one__slider {
-    margin-top: -135px;
+    margin-top: -50px;
   }
 }
 
@@ -1898,14 +1898,11 @@ h1 {
     margin-top: 25px;
   }
   .steps__container {
-    padding-top: 65px;
+    padding-top: 70px;
     padding-bottom: 70px;
   }
   .steps__gradient h2 {
     font-size: 70px;
-  }
-  .step-one__slider {
-    margin-top: -220px;
   }
   .main-one__title {
     -webkit-box-orient: vertical;
@@ -1915,10 +1912,22 @@ h1 {
     text-align: center;
     gap: 20px;
   }
+  .step-two__header {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 575.8px) and (min-width: 350px) {
+  .step-one__slider {
+    margin-top: -160px;
+  }
 }
 
 @media (max-width: 349.8px) {
   .steps__gradient h2 {
     font-size: 55px;
+  }
+  .step-one__slider {
+    margin-top: -220px;
   }
 }
